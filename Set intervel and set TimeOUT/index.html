@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>syed mujtaba</h1>
+    <button id="start"> Start</button>
+    <button id="stop">  Stop</button>
+</body>
+<script>
+
+    let interval;
+
+    let sayName = function(){
+        let name = function(){console.log("mujtab shah" , Date.now());}
+        interval = setInterval(name , 1000)}
+
+        let stopSayName = function(){
+            clearInterval(interval)
+        }
+
+
+
+document.querySelector('#start').addEventListener('click',
+    sayName
+)
+
+document.querySelector('#stop').addEventListener('click',
+    stopSayName
+)
+
+        
+
+</script>
+</html>
